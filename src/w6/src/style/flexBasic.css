@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  background-color: aquamarine;
+  padding: 1rem;
+  border: 1px solid #000;
+}
+
+.container {
+  background-color: bisque;
+  margin-inline: auto;
+  max-width: 50rem;
+  padding: 1rem;
+}
+
+.children {
+  border: 1px solid #f00;
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+/*보통의 웹사이트 레이아웃*/
