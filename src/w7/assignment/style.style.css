@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -32,8 +33,8 @@ body {
 
 .logo-box {
   background-color: #fff;
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 2.125rem;
+  height: 2.125rem;
   border: #fff;
   border-radius: 10px;
 }
@@ -63,11 +64,26 @@ body {
 }
 
 .title {
+  text-align: center;
   font-size: 5rem;
   margin-inline: 9.45rem;
   margin-bottom: 1rem;
 }
 
+.search-bar > .search {
+  width: 45rem;
+  height: 4rem;
+  box-shadow: 0px 1px 10px #8b8b8b;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  color: #8b8b8b;
+  font-size: 20px;
+  margin-inline: 9.45rem;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+}
 .icon-text {
   background-color: #fff;
   padding-inline: 30px;
@@ -77,4 +93,57 @@ body {
 .black-box {
   height: 25.125rem;
   background-color: black;
+  padding: 0px 30px 60px 30px;
+  color: #fff;
+}
+
+.black-box > .black-box-text {
+  display: flex;
+  gap: 11rem;
+  padding-block: 3rem 1rem;
+  padding-inline: 0px;
+  margin-block: 0rem;
+  margin-inline: 3.1953rem;
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.black-box-text-2 {
+  list-style: none;
+  font-size: 1rem;
+  padding-left: 0;
+  margin-block: 1.2rem;
+}
+
+.black-box-text-3 {
+  list-style: none;
+  font-size: 1rem;
+  padding-left: 3.1rem;
+  margin-bottom: 3.2rem;
+}
+
+.black-box-text-4 {
+  list-style: none;
+  font-size: 1rem;
+  padding-left: 0.05rem;
+  margin-top: 1.875rem;
+}
+
+.logo-box-bottom {
+  list-style: none;
+  font-size: 20px;
+  margin: 0rem;
+  padding-block: 0rem;
+  padding-left: 13.25rem;
+}
+
+.black-box > .black-box-text-group {
+  display: flex;
+  gap: 190px;
+  padding-left: 0;
+  margin-block: 0rem;
+  margin-inline: 3.1953rem;
+  list-style: none;
+  font-size: 1.5rem;
 }
