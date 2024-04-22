@@ -84,10 +84,10 @@ body {
   margin-bottom: 1rem;
   margin: 0 auto;
 }
-.icon-text {
+.container-icon-text-main {
   background-color: #fff;
   padding-inline: 30px;
-  height: 61.125rem;
+  height: 55.125rem;
 }
 
 .black-box {
@@ -127,7 +127,6 @@ body {
   list-style: none;
   font-size: 1rem;
   padding-left: 0.05rem;
-  margin-top: 1.875rem;
 }
 
 .logo-box-bottom {
@@ -146,4 +145,38 @@ body {
   margin-inline: 3.1953rem;
   list-style: none;
   font-size: 1.5rem;
+}
+
+.container-icon-text-main-list {
+  list-style: none;
+
+  display: flex;
+  gap: 3rem 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block: 9rem 0rem;
+}
+
+.container-icon-text-main-list-box {
+  width: 39.2097rem;
+  height: 205.95px;
+  background-color: #fff;
+  list-style: none;
+  font-size: 1.5rem;
+  padding-left: 6.7523rem;
+  padding-right: 24px;
+}
+
+.container-icon-text-main-list-box > .bold-text {
+  font-weight: 700;
+  padding-block: 3rem 1rem;
+}
+
+.container-icon-text-main-list-box > .middle-text {
+  padding-bottom: 1.25rem;
+}
+
+.container-icon-text-main-list-box > .blue-text {
+  color: #4c5fd5;
+  font-size: 1.25rem;
 }
