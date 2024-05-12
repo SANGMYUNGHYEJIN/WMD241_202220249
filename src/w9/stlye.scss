@@ -1,0 +1,60 @@
+* *::after *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0rem;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.section {
+  padding-block: 1.5rem;
+}
+.section > h2 {
+  max-width: 60rem;
+  margin-inline: auto;
+  margin-block: 0;
+  padding-inline: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.container {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  background-color: oklch(0.95 0.01 240);
+}
+
+.grid {
+  display: grid;
+
+  &__item {
+    &--nth {
+      @for $i from 1 through 12 {
+        &-#{$i} {
+          background-color: oklch(0.9 0.05 $i * 30);
+        }
+      }
+    }
+  }
+
+  &--opt-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    //비례. 유동적으로 변할 수 있으나 1:1:1의 비율은 반드시 지켜야함.
+    //grid-template-rows: 1fr 1fr 1fr 1fr;
+    //가로, 세로 각각 비율이 동일함. 세로크기가 똑같아짐.
+    grid-auto-rows: 1fr;
+    grid-template-rows: 4fr; //첫번쨰 칸만 4fr 로 만들어짐.
+    column-gap: 0.75rem;
+    row-gap: 24px;
+  }
+  &--opt-2 {
+    //grid-template-columns: repeat(3, 1fr);
+    //grid-template-columns: 12.5rem repeat(2, 1fr);
+    //grid-template-columns: repeat(3, minmax(6.25rem, 1fr)); <<부모님을 벗어남
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    grid-auto-rows: 1fr; //안의 컨텐츠를 동일비율로 만들어줌.
+    column-gap: 0.75rem;
+    row-gap: 24px;
+  }
+}
