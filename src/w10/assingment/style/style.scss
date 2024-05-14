@@ -146,6 +146,7 @@ body {
   grid-template-columns: 261px 261px 261px;
   grid-auto-rows: subgrid;
   margin-left: 4rem;
+  margin-bottom: 4rem;
   grid-template-columns: repeat(auto-fill, minmax(254px, 1fr));
 
   // grid-auto-columns: auto;
@@ -155,9 +156,9 @@ body {
   grid-column: 1 / -1;
   font-size: 1.25rem;
   color: #10284b;
-
+  margin: 64px 0px 0px 0px;
   &--st-t {
-    margin: 0rem;
+    margin: 0px;
     font-size: 3rem;
     color: #10284b;
     font-weight: 900;
