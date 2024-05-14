@@ -1,17 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
-:root {
-  --card-m-y: 1rem;
-  --card-m-x: 1.5rem;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 .card {
+  width: 261px;
+  height: 235.2px;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 1.5rem;
+  padding: 24px 24px 40px 24px;
   background-color: oklch(1 0 0);
-  border: 1px solid oklch(0.5 0 0);
-  border-radius: 0.75rem;
+  border: 0.8px solid rgb(229, 229, 230);
+  border-radius: 0.5rem;
 }
 .section--opt-pos-rel .card {
   position: relative;
@@ -345,15 +343,14 @@
 .card:nth-child(1) {
   margin-top: 0;
 }
-.card__top {
-  padding-block: var(--card-m-y);
-  padding-inline: var(--card-m-x);
-}
 .card__middle {
-  width: 100%;
+  width: 40px;
+  height: 40px;
   aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 0.05rem solid rgb(229, 229, 230);
+  border-radius: 0.5rem;
 }
 .card__bottom {
   padding-block: var(--card-m-y);
@@ -363,12 +360,15 @@
   font-weight: 600;
 }
 .card__title {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-block: 12px 8px;
 }
 .card__subtitle {
-  margin-bottom: 1rem;
-  font-weight: 600;
-  color: oklch(0.5 0 0);
+  margin-block: 0px 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #10284b;
 }
 .card__desc {
   display: -webkit-box;
